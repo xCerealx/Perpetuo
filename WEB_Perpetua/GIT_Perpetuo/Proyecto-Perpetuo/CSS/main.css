@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: grey;
+}
+
+/* top bar menu */
+
+nav {
+    margin: 0 auto;
+    width: 750px;
+    position: relative;
+}
+
+nav ul {
+    margin: 0;
+    padding: 60px;
+    list-style: none;
+}
+
+nav ul li {
+    float: none;
+    display: inline-block;
+}
+
+nav ul li:nth-child(1) {
+    float: left;
+}
+
+nav ul li:nth-child(2) {
+    float: left;
+}
+
+nav ul li:nth-child(3) {
+    float: right;
+}
+
+nav ul li:nth-child(4) {
+    float: right;
+}
+
+nav ul li a {
+    color: white;
+    background-color: #ffa400;
+    font-size: 21px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #e6427a;
+    box-shadow: 0 2px 2px #7530b2;
+    transition: 0.5s;
+}
+
+/* Logo = Home Button */
+
+.logo_load {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    align-self: center;
+    text-align: center;
+    background-color: #ffa400;
+}
+
+.logo_home {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -100px;
+    text-align: center;
+}
+
+.logo_home img {
+    max-width: 120px;
+    padding: 12%;
+    transition: 0.5s;
+}
+
+.logo_home img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Bar Buttons corners */
+
+#btn_left a {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 21px;
+}
+
+#btn_right a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 21px;
+    background-color: #00afaa;
+}
+
+#btn_right a:hover {
+    background-color: #003b4d;
+}
+
+/* Drop Down Menu */
+
+.dd {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+ul.dd-cntnt {
+    display: block;
+    position: absolute;
+    left: -8px;
+    max-width: 190px;
+    color: white;
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+
+.dd-cntnt a {
+    color: white;
+    padding: 15px 42px;
+    display: none;
+    background-color: #ffa400;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.dd-btn:hover .dd-cntnt a {
+    display: block;
+}
+
+.dd-cntnt a:hover {
+    transform: scale(1.05) perspective(1px)
+}

@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff7ee;
+}
+
+/* top bar menu (Start) */
+
+nav {
+    margin: 0 auto;
+    width: 750px;
+    position: relative;
+    z-index: 100;
+}
+
+nav ul {
+    margin: 0;
+    padding: 60px;
+    list-style: none;
+}
+
+nav ul li {
+    float: none;
+    display: inline-block;
+}
+
+nav ul li:nth-child(1) {
+    float: left;
+}
+
+nav ul li:nth-child(2) {
+    float: left;
+}
+
+nav ul li:nth-child(3) {
+    float: right;
+}
+
+nav ul li:nth-child(4) {
+    float: right;
+}
+
+nav ul li a {
+    color: white;
+    background-color: #ffa400;
+    font-size: 21px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #e6427a;
+    box-shadow: 0 2px 2px #7530b2;
+    transition: 0.5s;
+}
+
+/* Logo = Home Button */
+
+.logo_load {
+    width: 2000px;
+    height: 2000px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -1000px;
+    text-align: center;
+    background-color: #ffa400;
+    z-index: 10;
+}
+
+.logo_home {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -100px;
+    text-align: center;
+    background-color: transparent;
+    transition: 2s;
+    transition-delay: 1s;
+    z-index: 10;
+}
+
+.logo_home img {
+    max-width: 120px;
+    padding: 12%;
+    transition: 0.5s;
+}
+
+.logo_home img:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Bar Buttons corners */
+
+#btn_left a {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 21px;
+}
+
+#btn_right a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 21px;
+    background-color: #00afaa;
+}
+
+#btn_right a:hover {
+    background-color: #003b4d;
+}
+
+/* Drop Down Menu */
+
+.dd {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+ul.dd_cntnt {
+    display: block;
+    position: absolute;
+    left: -8px;
+    max-width: 190px;
+    color: white;
+    border: none;
+    padding: 0;
+    text-align: center;
+}
+
+.dd_cntnt a {
+    color: white;
+    padding: 15px 42px;
+    display: none;
+    background-color: #ffa400;
+    text-align: center;
+    align-content: center;
+    transition: 0.5s;
+}
+
+.dd_btn:hover .dd_cntnt a {
+    display: block;
+}
+
+.dd_cntnt a:hover {
+    transform: scale(1.05) perspective(1px)
+}
+
+a.login {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    text-decoration: none;
+    right: -100px;
+}
+
+/* top bar menu (End) */
+
+/* SLIDER (Start) */
+
+.container {
+    width: 90%; 
+    margin: 0px auto;
+}
+
+.carousel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    width: 300%;
+    transition: all 0.3s;
+}
+
+.slider section {
+    flex-basis: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: 12px;
+}
+
+.arrow.right {
+    right: 12px;
+}
+
+/* Slider Indicators */
+
+.controls ul {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.controls ul li {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    margin: 10px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.controls ul li.selected {
+    background: transparent;
+}
+
+/* Slider (End) */
+
+/* Footer (start) */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 21px;
+    grid-row-gap: 21px;
+    margin-left: 100px;
+    margin-top: 21px;
+}
+
+#social h3 {
+    justify-content: center;
+    align-items: center;
+}
+
+h3 a {
+    text-decoration: none;
+}
+
+#corporados {
+    grid-area: 2 / 1 / 3 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#corporados img {
+    height: 24px;
+}
+
+.map {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer (End) */

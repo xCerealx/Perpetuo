@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<htm lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El PERPE</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCCVohUJgDAAsIN40tK-tDu-FrDhg8j-1U",
+          authDomain: "el-perpe-d3aa3.firebaseapp.com",
+          databaseURL: "https://el-perpe-d3aa3-default-rtdb.firebaseio.com",
+          projectId: "el-perpe-d3aa3",
+          storageBucket: "el-perpe-d3aa3.appspot.com",
+          messagingSenderId: "50287798467",
+          appId: "1:50287798467:web:d2da396fb27275dafd1a76",
+          measurementId: "G-R31050YK3Q"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</head>
+<body>
+    <!-- Top Bar Menu -->
+    <nav>
+        <div id="logo" class="logo_load">
+            <a href="index.html"><img src="IMG/PERPE_ICON.png" alt="logo Perpetuo Socorro"></a>
+        </div>
+        <ul>
+            <li id="btn_left"><a href="#">El Perpe</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li id="btn_right"><a href="#">Agenda</a></li>
+                <div class="dd">
+                    <li class="dd_btn"><a href="#">La Vecindad</a>
+                        <ul class="dd_cntnt">
+                            <li><a href="#">Bodega Comfama</a></li>
+                            <li><a href="#">The Chef is back</a></li>
+                            <li><a href="#">La Casa de Carlota</a></li>
+                            <li><a href="#">Elements</a></li>
+                            <li><a href="#">Mattelsa</a></li>
+                        </ul>
+                    </li>
+                </div>
+        </ul>
+        <a href="login.html" class="login">Login</a>
+    </nav>
+    <!-- Slider (Start) -->
+    <div class="container">
+        <div class="carousel">
+            <div class="slider">
+                <section><a><img src="IMG/Distrito_Perpetuo.png"></a></section>
+                <section><a><img src="IMG/Ballet_Perpetuo.png"></a></section>
+                <section><a><img src="IMG/Bandera_Perpetuo.png"></a></section>
+            </div>
+            <div class="controls">
+                <span class="arrow left"><img src="IMG/navigate_before.png"></span>
+                <span class="arrow right"><img src="IMG/navigate_next.png"></span>
+                <ul>
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Slider (End) -->
+        <script src="/JS/main.js"></script>
+    </body>
+    <footer>
+        <div id="Social">
+            <h3><a href="https://www.instagram.com/elperpetuosocorro/?hl=es"><img src="IMG/amor.png"> Instagram</a>
+            </h3>
+            <h3><a href="https://twitter.com/Perpetuo_DC"><img src="IMG/gorjeo.png"> twitter</a>
+            </h3>
+            <h3><a href="https://m.facebook.com/perpetuosocorromed"><img src="IMG/me-gusta.png"> Facebook</a>
+            </h3>
+            <h3><img src="IMG/whatsapp.png"> 301 220 2296</h3>
+            <h3><img src="IMG/correo-electronico.png"> contacto@elperpetuosocorro.org</h3>
+        </div>
+        <div id="corporados">
+            <a href="https://www.mattelsa.net/"><img src="IMG/Mattelsa.png"></a>
+            <a href="https://www.comfama.com/"><img src="IMG/Comfama.png"></a>
+            <a href="https://www.sandiego.com.co/"><img src="IMG/Sandiego.png"></a>
+            <a href="https://www.upb.edu.co/es/home"><img src="IMG/Escudo_UPB.png"></a>
+        </div>
+        <section class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2126973309005!2d-75.57489532481425!3d6.235670526440818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44296b5714f391%3A0xf43588a2a768f3c3!2sEl%20Perpetuo%20Socorro%20Distrito%20Creativo!5e0!3m2!1ses!2sco!4v1684783683839!5m2!1ses!2sco"
+                width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </footer>
+</htm>

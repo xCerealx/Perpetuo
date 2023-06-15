@@ -1,0 +1,153 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Credentials Background */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffa400;
+  background-position: center;
+  background-size: cover;
+}
+
+.formBox {
+  position: relative;
+  width: 400px;
+  height: 800px;
+  background: #e6427a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 21px;
+  backdrop-filter: blur(15px);
+}
+
+h2 {
+  font-size: 2em;
+  color: #fff7ee;
+  text-align: center;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff7ee;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff7ee;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+top: 5px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 35px 0 5px;
+  color: #fff7ee;
+}
+
+.inputbox img {
+  position: absolute;
+  right: 8px;
+  color: #fff7ee;
+  top: 20px;
+}
+
+.forget{
+  margin: -15px 0 15px ;
+  font-size: .9em;
+  color: #fff7ee;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.forget label input{
+  margin-right: 3px;
+  
+}
+.forget label a{
+  color: #fff7ee;
+  text-decoration: none;
+}
+.forget label a:hover{
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background: #fff7ee;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+.register{
+  font-size: .9em;
+  color: #fff7ee;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.register p a{
+  text-decoration: none;
+  color: #fff7ee;
+  font-weight: 600;
+}
+.register p a:hover{
+  text-decoration: underline;
+}
+
+.inputbox img {
+  width: 24px;
+}
+
+/* Logo = Home Button */
+
+#logoSol {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  margin-left: -75px;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+#logoSol img {
+  max-width: 120px;
+  padding: 0;
+  transition: 0.5s;
+}
+
+#logoSol:hover {
+      transform: scale(1.1);
+}
+
+/* login form */

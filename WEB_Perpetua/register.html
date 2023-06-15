@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/register.css">
+    <title>Register</title>
+</head>
+<body>
+    <section>
+        <div class="formBox">
+            <div class="formValue">
+                <form>
+                    <span id="validation_text"></span>
+                    <a href="index.html"><img id="logoSol" src="IMG/PERPE_ICON.png"></a>
+                    <div class="inputbox">
+                      <input type="text" id="name" required>
+                      <label for="">Nombre</label>
+                  </div>
+                    <div class="inputbox">
+                        <img src="IMG/email.png">
+                        <input type="email" id="email" required>
+                        <label for="">E-mail</label>
+                    </div>
+                    <div class="inputbox">
+                        <img src="IMG/candado.png">
+                        <input type="password" id="password" required>
+                        <label for="">Contraseña</label>
+                    </div>
+                    <input type="button" value="Registro" id="btn_send" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="JS/register.js"></script>
+</body>
+</html>
